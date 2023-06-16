@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quà Tặng Cuộc Sống</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+      <style>
+        .banner {
+            background-image: url(banner.jpg);
+            background-size: cover;
+            height: 150px;
+            display: flex;
+            align-items: center;
+        }
+        .banner >  .title {
+            color: darkblue;
+            position: absolute;
+            left: 40%;
+            transform: translateX(-50%);
+            top: 6%;
+            transform: translateY(-50%);
+        }
+        
+        .video > video {
+            width: 100%;
+            object-fit: cover;
+        }
+        .block-1 {
+            margin-left: auto;
+            display: flex;
+            gap: 10px;
+            /* khoang cach giua video va content */
+        }
+        .content {
+            min-width: 312px;
+            width: 30%;
+            margin-left: auto;
+        }
+        .content > hr {
+           margin: 0;
+           padding: 0;
+        }
+        ul.object {
+            display: flex;
+            margin-left: 65%;
+            list-style-type: none;
+        }
+        ul.object > li {
+            border: 1px solid black;
+            display: block;
+            background-color: lightgrey;
+            text-align: center;
+        }
+        ul.object > li > a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        ul.object > li > a:hover {
+            color: white;
+        }
+        ul.button {
+            display: flex;
+            margin-left: 80%;
+            list-style-type: none;
+        }
+        ul.button > li {
+            border: 1px solid black;
+            display: block;
+            background-color: lightgrey;
+            text-align: center;
+        }
+        ul.button > li > a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        ul.button > li > a:hover {
+            color: white;
+        }
+        ul.tag {
+            display: flex;
+            margin-left: -8%;
+            list-style-type: none;
+        }
+        ul.tag > li {
+            border: 1px solid black;
+            display: block;
+            background-color: lightgrey;
+            text-align: center;
+        }
+        ul.tag > li > a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .vid {
+            margin-right: auto;
+            width: 23%;
+        }
+        section.vid > h2 {
+            font-size: large;
+            color: darkblue;
+            text-align: center;
+        }
+      </style>
+    </head>
+    <body style="background-color: grey;">
+       
+        <div class="banner">
+            <h1 class="title"> QUÀ TẶNG CUỘC SỐNG  </h1>
+        </div>
+        <div class="block-1">
+            <div class="video">
+                <video autoplay controls  loop src="video4k.mp4"></video>
+            </div>
+            <div class="content"> 
+                <h2 style="text-align: center;">Câu truyện về luật nhân quả</h2>
+                <hr>
+                <h3>Quà tặng cuộc sống - Câu truyện về luật nhân quả</h3>
+                <div>
+                    <ul class="object">
+                        <li><a href="#">Like</a></li>
+                        <li><a href="#">Share</a></li>
+                    </ul>
+                </div>
+                <div> <textarea placeholder="Ý kiến của bạn" type="text" style="height:  100px; width: 90%;"></textarea></div>
+                <div>
+                    <ul class="button">
+                        <li><a href="#">Gửi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="tag">
+                        <li><a href="#">Tag</a></li>
+                        <li><a href="#">qtcs</a></li>
+                        <li><a href="#">vtv3</a></li>
+                        <li><a href="#">nhân quả</a></li>
+                        <li><a href="#">đạo đức</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="videos">
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/VjVeYV5ef8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Cái Dằm Trong Tim</h2> </section>
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/zP8SOKOyy2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Nàng Công Chúa Chuột</h2> </section>
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/RR_Orr-dyzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Đối Thủ Cạnh Tranh</h2> </section>
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/J0DIdQMl4Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Tham Vàng Hại Vua</h2> </section>
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/nd2EDx3SEGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Quán Nước Lừa Đảo</h2> </section>
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/j0_OCeeyVLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Phú Ông Ghen Tỵ</h2> </section>
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/87iHCMe7LYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Trời Mưa Đi Cắt Lúa</h2> </section>
+            <section class="vid"> <iframe width="500" height="255" src="https://www.youtube.com/embed/UfJU9Y1dknU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <h2>Hai Đứa Trẻ Ngoan</h2> </section>
+        </div>
+    </body>
+    <footer style="background-color: darkgrey; text-align: center;">
+       <p>Nguồn: YouTube CHÍNH THỨC của VTV - Đài Truyền hình Việt Nam</p> 
+    </footer>
+</html>

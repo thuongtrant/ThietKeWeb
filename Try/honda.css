@@ -1,0 +1,48 @@
+/* CSS NAV */
+header{
+   display: flex ;  /* cho các thành phần trong header nằm ngang */
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.content {
+    width: 80%;
+    margin: 0 auto;  /* trên dưới = 0, trái phải auto */
+}
+nav {
+    margin-left: auto;
+}
+nav ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+}
+nav > ul > li > a {
+     text-transform: uppercase; /* Viết hoa tất cả */
+     text-decoration: none;  /* bỏ gạch chân  */
+     display: block;
+     padding : 15px 10px
+}
+/*CSS BANNER*/
+section.banner {
+        animation: doinen ease-in-out 3s infinite ;
+        background-size: 100%;
+        background-repeat: no-repeat;
+}
+section.banner img {
+        visibility: hidden;
+        width: 100%;
+}
+@keyframes doine {
+    0% {
+        background-image: url(../images/honda/car.jpg)
+    }
+    30% {
+        background-image: url(car_1.jpg)
+    }
+    70% {
+        background-image: url(car_1.jpg)
+    }
+}

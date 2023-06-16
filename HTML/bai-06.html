@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Khảo sát nhu cầu sử dụng thư viện</title>
+    <link rel="stylesheet" href="library-icon.ico">
+    <style>
+        body{
+          
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-image: url(library-banner.jpg);
+            background-size: cover;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            
+        }
+        .banner >  .title {
+            text-align: center;
+        }
+        section.footer {
+            color: white;
+            background-image: url(bg_footer.jpg.jpg);
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-color: black;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img class="logo" src="https://cdn.haitrieu.com/wp-content/uploads/2021/09/Logo-DH-Mo-TPHCM-OU.png" width="150px" style="float: left;">
+        <h1 class="title" style="color: red;"> THƯ VIỆN <br> TRƯỜNG ĐẠI HỌC MỞ</h1>
+        <img src="library-banner.jpg" alt="library" height="100%" style="margin-left: auto;">
+    </div>
+    <h2 style="color: blue;">Khảo sát nhu cầu và mức độ hài lòng của bạn đọc Thư viện Trường Đại học Mở Tp.HCM</h2>
+    <p>Nhằm đáp ứng tốt hơn nhu cầu của người sử dụng. Thư viện tiến hành khảo sát bạn
+        đọc về nhu cầu và công tác phục vụ của Thư viện. Sinh viên vui lòng trả lời các câu
+        hỏi dưới đây. Các câu trả lời của các bạn sẽ giúp Thư viện đáp ứng tốt hơn các nhu
+        cầu về tài liệu, cơ sở dữ liệu và môi trường học tập/nghiên cứu tại Thư viện.
+        <br> Trân trọng cảm ơn!</p>
+        <p> 1. Bạn có đến thư viện không? </p>
+        <div>
+            <input type="radio" name="answer"/> Có
+            <input type="radio" name="answer"/> Không
+        </div>
+        <p>2. Nếu không đến Thư viện, bạn có thể cho biết lý do?</p>
+        <div>
+            <input type="checkbox"/> Tự mua tài liệu. <br>
+            <input type="checkbox"/> Tự kiếm thông tin trên internet hoặc từ nguồn khác. <br>
+            <input type="checkbox"/> Không gian thư viện không được thoải mái. <br>
+            <input type="checkbox"/> Nhân viên thư viện phục vụ không chu đáo. <br>
+            Khác <input type="text"/> 
+        </div>
+        <p>3. Bạn có truy cập trang web Thư viện <a href="http://thuvien.ou.edu.vn">http://thuvien.ou.edu.vn</a> không? </p>
+        <div>
+            <input type="radio" name="answer"/> Có
+            <input type="radio" name="answer"/> Không
+        </div>
+        <p>4. Nếu bạn đã truy cập trang web Thư viện, xin vui lòng cho biết bạn đã xem những mục nào?</p>
+        <div>
+            <input type="checkbox"/> Bản tin thư viện. <br>
+            <input type="checkbox"/> Giới thiệu sách mới. <br>
+            <input type="checkbox"/> Những điều cần biết <br>
+            <input type="checkbox"/> Tra cứu tài liệu. <br>
+            <input type="checkbox"/> Xem tài liệu điện tử. <br>
+            <input type="checkbox"/> Đặt trước tài liệu. <br>
+            <input type="checkbox"/> Góp ý thư viện <br>
+            Khác <input type="text"/> 
+        </div>
+        <p>5. Thư viện có các tài liệu mới xuất bản hoặc tái bản gần nhất trong lĩnh vực mà bạn quan tâm?</p>
+        <div style="display: flex; gap: 12px;">
+            <span style="margin-top: auto; margin-bottom: 2px">Hoàn toàn không đồng ý</span>
+            <div style="display: inline-flex; gap: 12px;">
+                <div style="text-align: center;">
+                    <div class="counter">1</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">2</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">3</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">4</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">5</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+            </div>
+            <span style="margin-top: auto; margin-bottom: 2px">Hoàn toàn đồng ý</span>
+        </div>
+        <p>6. Website của Thư viện có hữu ích cho việc tra cứu/tìm kiếm tài liệu của bạn?</p>
+        <div style="display: flex; gap: 12px;">
+            <span style="margin-top: auto; margin-bottom: 2px">Hoàn toàn không đồng ý</span>
+            <div style="display: inline-flex; gap: 12px;">
+                <div style="text-align: center;">
+                    <div class="counter">1</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">2</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">3</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">4</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+                <div style="text-align: center;">
+                    <div class="counter">5</div>
+                    <input type="radio" style="margin: 0"/> 
+                </div>
+            </div>
+            <span style="margin-top: auto; margin-bottom: 2px">Hoàn toàn đồng ý</span>
+        </div>
+        <p>7. Thư viện cần làm gì để đáp ứng tốt hơn nhu cầu của bạn?</p>
+        <textarea type="text" style="height:  200px; width: 40%;"> </textarea>
+</body>
+<section class="footer" >
+    <div>Thư viện - Trường Đại học Mở Thành Phố Hồ Chí Minh. <br>
+        Địa chỉ: 97 Võ Văn Tần - Phường 6 - Quận 3 - TP.HCM <br>
+        Điện thoại: (08) 3930 0209 - Fax: (08) 3930 0085 <br>
+        E-mail: <a href="mailto: thuviendhm@ou.edu.vn">thuviendhm@ou.edu.vn</a>
+    </div>
+</section>
+</html>
