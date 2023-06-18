@@ -1,0 +1,123 @@
+* {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section.menu {
+    background-color: rgb(33, 33, 134);
+   
+}
+section.menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+section.menu > ul > li {
+    border-right: 1px solid white;
+    min-width: 120px;
+    text-align: center;
+}
+section.menu > ul > li:last-child
+{
+    border-right: none;
+}
+section.menu > ul > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 8px;
+}
+section.menu > ul > li > a:hover {
+    color: black;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix {
+    overflow: hidden;
+}
+section.banner {
+    margin-top: 5px;
+    background: linear-gradient(white, blue);
+    display: flex;
+}
+section.banner >h1 {
+    font-size: 40px;
+    color: darkblue;
+    text-shadow: 2px 3px 2px blue;
+    position: relative;
+    left: 10%;
+}
+.content {
+    width: 70%;
+    margin: 1px auto;
+    
+}
+div.posts {
+    background-color: rgb(84, 84, 236);
+}
+div.subject {
+    margin-top: 5px;
+}
+div.subject > h2 {
+    color: white;
+    background-color: darkblue;
+    margin: 0;
+    padding:10px ;
+    border-radius: 10px 10px 0 0;
+}
+div.post {
+    display: flex;
+    border-bottom: 1px solid white ;
+}
+div.col1 {
+    width: 10%;
+}
+div.col2 {
+    width: 40%;
+}
+div.col3 {
+    width: 20%;
+}
+div.col4 {
+    width: 30%;
+    direction: rtl;
+}
+div.col {
+    padding: 10px;
+}
+div.col > a {
+    text-decoration: none;
+}
+div.col > img {
+    width: 100%;
+    /* border-radius: 50%;
+    background-color: black; */
+}
+ul, p {
+    margin: 0;
+    list-style-type: none;
+}
+section.ads > div {
+    position: fixed;
+    background: linear-gradient(darkblue, blue);
+    padding: 120px 3px;
+    border-radius: 10px;
+    bottom: 43%;
+}
+div.ads-left {
+    left:0;
+}
+div.ads-right {
+    right:0;
+}
+section.footer {
+    background-image: url(rm373batch2-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
