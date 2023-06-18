@@ -1,7 +1,6 @@
 * {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
     padding: 0;
 }
 section.menu {
@@ -52,6 +51,15 @@ section.banner >h1 {
     text-shadow: 2px 3px 2px blue;
     position: relative;
     left: 10%;
+    animation: doimau .5s infinite;
+}
+@keyframes doimau {
+    from {
+        color: darkblue;
+    }
+    to {
+        color: blue;
+    }
 }
 .content {
     width: 70%;
@@ -98,6 +106,10 @@ div.col > img {
     width: 100%;
     /* border-radius: 50%;
     background-color: black; */
+    transition: transform ease-in-out 0.5s;
+}
+div.col >img:hover {
+    transform:skew(-10deg) ;
 }
 ul, p {
     margin: 0;
@@ -108,16 +120,40 @@ section.ads > div {
     background: linear-gradient(darkblue, blue);
     padding: 120px 3px;
     border-radius: 10px;
-    bottom: 43%;
+    bottom: 35%;
 }
 div.ads-left {
-    left:0;
+    left: 5px;;
 }
 div.ads-right {
-    right:0;
+    right: 5px;;
 }
 section.footer {
     background-image: url(rm373batch2-04.jpg);
     background-repeat: no-repeat;
     background-position: center right;
+}
+.tooltipcontent {
+    background-color: rgb(38, 104, 104);
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    margin-left: -100px;
+}
+
+.tooltip::after {
+ content: "";
+ border-width: 10px;
+ border-style: solid;
+ border-color: transparent transparent rgb(38, 104, 104) transparent; 
+ position: absolute;
+ top: -20px;
+ right: 10%;
+} 
+
+.tooltip:hover .tooltipcontent {
+    display: block;
 }
