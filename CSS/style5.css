@@ -12,7 +12,6 @@ section.menu > ul {
     margin: 0;
     padding: 0;
     display: flex;
-
 }
 section.menu > ul > li {
     border-right: 1px solid white;
@@ -133,7 +132,7 @@ section.footer {
     background-repeat: no-repeat;
     background-position: center right;
 }
-.tooltipcontent {
+.tooltip-content {
     background-color: rgb(38, 104, 104);
     padding: 5px;
     border-radius: 10px;
@@ -143,7 +142,6 @@ section.footer {
     width: 200px;
     margin-left: -100px;
 }
-
 .tooltip::after {
  content: "";
  border-width: 10px;
@@ -151,9 +149,8 @@ section.footer {
  border-color: transparent transparent rgb(38, 104, 104) transparent; 
  position: absolute;
  top: -20px;
- right: 10%;
-} 
-
-.tooltip:hover .tooltipcontent {
+ right: 10%; 
+}
+.tooltip:hover .tooltip-content {
     display: block;
 }
