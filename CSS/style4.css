@@ -34,7 +34,6 @@ div.logo {
 .ads > ul {
     list-style-type: none;
     display: flex;
-    margin-left: auto;
     position: relative;
     left: 90%;
 }
@@ -68,13 +67,19 @@ div.logo {
 .menu-option > li:last-child {
     border-right: none;
 }
-.menu-option > li > a:hover{
-    color: black;
+.menu-option > li:hover{
+    color: white;
 }
 .menu-body > ul {
     display: flex;
     margin: 0;
     list-style-type: none;
+}
+.menu-body > ul > li > a {
+    display: block;
+}
+.menu-body > ul > li > a:hover {
+    color: white;
 }
 .menu-option > li {
     border-right: 2px solid black;
@@ -84,6 +89,35 @@ div.logo {
 }
 .menu-option > li > a {
     text-decoration: none;
+}
+.button{
+
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    margin-left: -100px;
+}
+.button-body
+{
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: -12%;
+    margin: 10px;
+}
+.button > ul > li {
+    list-style-type: none;
+}
+.button > ul > li {
+    list-style-type: none;
+    background: linear-gradient(lightblue, blue);
+    border-bottom: 2px solid white;
+    margin: 0;
+    padding: 14px 10px;
+}
+.button-head:hover .button {
     display: block;
 }
 .main-content {
@@ -93,6 +127,9 @@ div.logo {
     display: flex;
     flex-wrap: wrap;
     width: auto;
+    right: -18%;
+    position: relative;
+    bottom: 502px;
 }
 .content img {
     max-width: 100%;

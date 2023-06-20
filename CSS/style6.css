@@ -1,0 +1,133 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.section {
+    display: flex;
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner {
+    background: linear-gradient(lightblue, white,lightblue);
+}
+.banner-body {
+    display: flex;
+}
+.banner-body > img {
+    width: 12%;
+    margin: auto 0 ;
+    padding-top: 3px;
+}
+.banner-body > h1 {
+    text-align: center;
+    margin: auto 0;
+}
+.banner-body > h1 > hr {
+    height: 3px;
+    background-color: black;
+}
+.heading1 > h1 {
+    text-align: center;
+    text-shadow: 4px 2px 4px rgb(49, 88, 101);
+    font-size: 40px;
+    padding-top: 15px;
+}
+.menu {
+    margin-left: auto;
+   display: flex;
+   /* align-items: center; */
+}
+.menu > ul {  
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    top: -155px;
+}
+.menu > ul > li {
+    list-style-type: none;
+    padding: 8px 5px;
+    
+}
+.menu > ul > li > a {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(247, 145, 104);
+}
+.ad > ul {
+    display: flex;
+    padding: 10px;
+    margin-bottom: auto;
+    position: relative;
+    left: 250px;
+}
+.banner-body > li {
+    margin: 0 auto;
+}
+.ad > ul > li {
+    display: flex;
+    list-style-type: none;
+    border: 2px dotted black;
+    background-color: rgb(115, 157, 171) ;
+    padding: 30px;
+    margin: 8px
+}
+.side-bar {
+    background-color: lightblue;
+}
+.side-bar > div {
+    display: flex;
+}
+.side-bar-header > h3 {
+padding-top: 8px;
+text-align: center;
+padding-left: 30px;
+}
+.side-bar-body > ul > li {
+    list-style-type: disclosure-closed;
+    background-color: rgb(169, 82, 82);
+    margin: 5px;
+    padding: 5px;
+}
+.content {
+    background-color: rgb(116, 170, 188);
+    padding-top: 4px;
+}
+.content > div {
+    display: flex;
+    margin-left: 4px;
+}
+.slogan > h3 {
+    text-align: center;
+    padding-left: 26%;
+    padding-top: 10px;
+    font-size: 25px;
+}
+.heading-2 {
+    background-color: rgb(169, 82, 82);
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+    width: 18%;
+    font-size: 10px;
+}
+div.line {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(169, 82, 82);
+}
+.title {
+    color: rgb(134, 64, 36);
+    font-size: 18px;
+}
+.title > p > span {
+    color: black;
+    background-color: rgb(103, 208, 208);
+    border-radius: 5px;
+}
