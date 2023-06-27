@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calender</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"> </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="delta">
+            <h3>
+                Giải Phương Trình ax<sup>2</sup> + bx + c = 0
+            </h3>
+            <span>Hệ số a </span><input type="text" id="aID" />
+            <p></p>
+            <span>Hệ số b </span><input type="text" id="bID" />
+            <p></p>
+            <span>Hệ số c </span><input type="text" id="cID" />
+        </div>
+        <div class="button">
+            <input type="button" value="  Giải  " onclick="giaiBac2()" />
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="BMI">
+            <h3>
+                Tính chỉ số BMI
+            </h3>
+            <span>Cân nặng </span> <input type="text" id="kg" /> <span>(kg)</span>
+            <p></p>
+            <span>Chiều cao </span> <input type="text" id="m"> <span>(m)</span>
+        </div>
+        <div class="button">
+            <input type="button" value="  Tính  " onclick="tinhBMI()" />
+            <p id="tinh"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="money">
+            <h3>Tính lãi suất tiết kiệm</h3>
+            <span>Số tiền </span> <input type="text" id="sotien"/> <span> (VNĐ) </span>
+            <p></p>
+            <span>Kỳ hạn </span> <input type="text" id="kyhan"/> <span> (tháng) </span>
+            <p></p>
+            <span>Lãi suất </span> <input type="text" id="laisuat"/> <span> (%/năm) </span>
+        </div>
+        <div class="button">
+            <input type="button" value="  Tính  " onclick="tinhLai()" />
+            <p id="tinhtien"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="change">
+            <h3>Chuyển đổi đơn vị tiền tệ</h3>
+            <span>Số tiền </span> <input type="text" id="tien"/> <span> (VNĐ)</span>
+            <p></p>
+            <span>Đơn vị tiền </span> 
+            <select id="select-currency">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+            </select>
+        </div>
+        <div class="button">
+            <input type="button" value="  Đổi  " onclick="doiTien()" />
+            <p id="doitien"></p>
+        </div>
+    </div>
+</body>
+
+</html>

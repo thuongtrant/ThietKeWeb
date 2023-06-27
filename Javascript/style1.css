@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(118, 205, 234);
+}
+.container {
+    border: 3px solid black;
+    margin-top: 10px;
+    width: 30%;
+    padding-left: 5px;
+}
+.delta > span {
+    color: white;
+}
+.delta > input {
+    background-color: white;
+}
+.button {
+    padding-top: 20px;
+}
+.button > input {
+    background-color: rgb(34, 120, 149);
+    color: white;
+}
+.BMI > span {
+    color: white;
+}
+.BMI > input {
+    background-color: white;
+}
+.money > span {
+    color: white;
+}
+.money > input {
+    background-color: white;
+}
+.change > span {
+    color: white;
+}
+.change > input {
+    background-color: white;
+}
+#select-currency {
+    background-color: white;
+    padding: 0  70px 0 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script src="script2.js"></script>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left">
+                <div>
+                    <input type="text" id="newColorID" placeholder="Nhập tên màu hoặc #mã-màu" id="name"/>
+                    <input type="button" value="Thêm màu" onclick="themMau();">
+                </div>
+                <div class="color" id="colorID">
+                    <input type="button" style="background-color: red;" onclick="toMau(this)">
+                    <input type="button" style="background-color: green;" onclick="toMau(this)">
+                    <input type="button" style="background-color: blue;"onclick="toMau(this)">
+                </div>
+            </div>
+            <div class="right">
+                <div class="choose">
+                    <input type="radio" name="shape" checked onclick="showShape('circleID')"/> Circle
+                    <input type="radio" name="shape" onclick="showShape('rectID')"/> Rectangle
+                    <input type="radio" name="shape" onclick="showShape('ellipseID')"/> Ellipse
+                </div>
+                <div class="shapes">
+                    <div id="circleID">
+                        <svg width="100" height="100"> 
+                        <circle cx="250" cy="250" r="80" fill="black" />
+                        </svg>
+                    </div>
+                    <div id="rectID">
+                        <svg>
+                            <rect x="150" y="100" width="200" height="100" fill="black" />
+                        </svg>
+                    </div>
+                    <div id="ellipseID">
+                        <svg width="500" height="130">
+                            <ellipse cx="250" cy="70" rx="150" ry="60" fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </body>
+</html>

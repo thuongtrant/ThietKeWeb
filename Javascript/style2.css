@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+}
+.left {
+    padding: 10px;
+}
+.right {
+    border-left: 3px solid black;
+    padding: 20px;
+}
+.choose {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+div.shapes > div {
+    display: none;
+}
+.shapes > div:first-child {
+    display: block;
+}
+.shapes {
+    background-color: gray;
+}
+.shapes svg {
+    width: 500px;
+    height: 500px;
+}
+.color {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px;
+}
+input[type=button], input[type=text] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 5px;
+}
+input[type=text] {
+    width: 300px;
+}
