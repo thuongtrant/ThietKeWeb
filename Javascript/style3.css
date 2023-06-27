@@ -1,0 +1,16 @@
+.choose > input {
+    background-color: rgb(132, 165, 177);
+    color: white;
+    padding: 5px 10px;
+}
+.ball-area {
+    margin-top: 10px;
+    background-color: rgb(193, 186, 186);
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+#ball {
+    width: 100px;
+    position: absolute;
+}
