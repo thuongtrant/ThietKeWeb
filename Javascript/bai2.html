@@ -1,0 +1,162 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <style>
+            .container {
+                display: flex;
+            }
+            .color {
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+            }
+            .color > input {
+                padding: 10px;
+                margin: 5px;
+            }
+            .shapes {
+                background-color: grey;
+            }
+            .shapes svg {
+                width: 500px;
+                height: 500px;
+            }
+            .shapes > div:not(:first-child) {
+                display: none;
+            }
+        </style>
+        <div class="container">
+            <div class="left">
+                <input type="text" placeholder="Nhập màu" id="newColorID">
+                <input type="button" value="Thêm màu" onclick="themmau()">
+                <div class="color" id="colorID">
+                    <input type="button" style="background-color: red;" onclick="tomau(this)">
+                    <input type="button" style="background-color: green;" onclick="tomau(this)">
+                    <input type="button" style="background-color: blue;" onclick="tomau(this)">
+                </div>
+            </div>
+            <div class="right">
+                <input type="radio" checked name="shape" onclick="showShape('circleID')"> Hình tròn
+                <input type="radio" name="shape" onclick="showShape('rectID')"> Hình chữ nhật
+                <input type="radio" name="shape" onclick="showShape('ellipseID')"> Hình olip
+                <div class="shapes">
+                    <div id="circleID">
+                        <svg width="100" height="100"> 
+                        <circle cx="250" cy="250" r="80" fill="black" />
+                        </svg>
+                    </div>
+                    <div id="rectID">
+                        <svg>
+                            <rect x="150" y="100" width="200" height="100" fill="black" />
+                        </svg>
+                    </div>
+                    <div id="ellipseID">
+                        <svg width="500" height="130">
+                            <ellipse cx="250" cy="70" rx="150" ry="60" fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function themmau() {
+                var color = document.getElementById("newColorID").value
+                var html = '<input type="button" style="background-color:' + color + '"; onclick="tomau(this)">'
+                var divColor = document.getElementById("colorID")
+                divColor.innerHTML += html; 
+            }
+            function showShape(shapeID)
+            {
+                var shapes = document.querySelectorAll(".shapes > div")
+                for(var i = 0; i < shapes.length; i++)
+                    shapes[i].style.display = "none"
+                var s = document.getElementById(shapeID)
+                s.style.display = "block"
+            }
+            function tomau(obj)
+            {
+                var c = obj.style.backgroundColor;
+                var shapes = document.querySelectorAll(".shapes > div > svg > :first-child");
+                for(var i =0;i< shapes.length;i++)
+                    shapes[i].style.fill = c;
+                var s = document.getElementById(shapeID)
+            }
+        </script>
+
+
+        <style>
+            .tab {
+                list-style-type: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+            .tab li a {
+                text-decoration: none;
+                padding: 20px 40px;
+                display: block;
+                background-color: blue;
+                color: white;
+                margin-right: 5px;
+            }
+            .active {
+                background-color: red !important;
+                color: white;
+            }
+            h1 {
+                margin: 0;
+                padding: 20px 8px;
+            }
+        </style>
+        <section>
+            <div>
+                <input type="text" placeholder="Nhập tên tab" id="tabName">
+                <input type="text" placeholder="Nội dung tab" id="tabContent">
+                <input type="button" value="Thêm tab" id="addTab">
+            </div>
+            <ul class="tab">
+                <li><a href="#tab1">Java</a></li>
+                <li><a href="#tab2">C++</a></li>
+                <li><a href="#tab3">Python</a></li>
+                <li><a href="#tab4">C#</a></li>
+            </ul>
+        <div class="tab-content active">
+            <h1 id="tab1">Welcome to Java</h1>
+            <h1 id="tab2">Welcome to C++</h1>
+            <h1 id="tab3">Welcome to Python</h1>
+            <h1 id="tab4">Welcome to C#</h1>
+        </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+       <script>
+        $(document).ready(function(){
+           $(".tab-content h1:not(:first-child)").hide();
+
+            $("ul.tab").on("click","li > a",function() {
+                event.preventDefault()
+
+                $("ul.tab a").removeClass("active")
+                $(this).addClass("active")
+
+                var tab = $(this).attr("href")
+                $(".tab-content h1").hide()
+                $(tab).show()
+            })
+            $("#addTab").click(function() {
+                var name = $("#tabName").val()
+                var content = $("#tabContent").val()
+                var count = $("ul.tab > li").length
+                $("ul.tab").append(
+                    `<li><a href="#tab${count+1}">${name}</a></li>`
+                )
+                $(".tab-content").append(
+                    `<h1 id="tab${count+1}" style="display:none">${content}</h1>`
+                )
+            })
+        })
+       </script>
+    </body>
+</html>
