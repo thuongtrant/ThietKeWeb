@@ -93,13 +93,23 @@
                 margin: 0;
                 padding: 0;
             }
-            .tab li a {
+            .tab li a:first-child {
                 text-decoration: none;
                 padding: 20px 40px;
                 display: block;
                 background-color: blue;
                 color: white;
                 margin-right: 5px;
+            }
+            .tab li {
+                position: relative;
+            }
+            .tab li a:last-child {
+                color: white;
+                text-decoration: none;
+                top: 5px;
+                right: 15px;
+                position: absolute;
             }
             .active {
                 background-color: red !important;
@@ -117,10 +127,22 @@
                 <input type="button" value="Thêm tab" id="addTab">
             </div>
             <ul class="tab">
-                <li><a href="#tab1">Java</a></li>
-                <li><a href="#tab2">C++</a></li>
-                <li><a href="#tab3">Python</a></li>
-                <li><a href="#tab4">C#</a></li>
+                <li>
+                    <a href="#tab1">Java</a>
+                    <a href="javascript:;">&times;</a>
+                </li>
+                <li>
+                    <a href="#tab2">C++</a>
+                    <a href="javascript:;">&times;</a>
+                </li>
+                <li>
+                    <a href="#tab3">Python</a>
+                    <a href="javascript:;">&times;</a>
+                </li>
+                <li>
+                    <a href="#tab4">C#</a>
+                    <a href="javascript:;">&times;</a>
+                </li>
             </ul>
         <div class="tab-content active">
             <h1 id="tab1">Welcome to Java</h1>
@@ -135,7 +157,7 @@
         $(document).ready(function(){
            $(".tab-content h1:not(:first-child)").hide();
 
-            $("ul.tab").on("click","li > a",function() {
+            $("ul.tab").on("click","li > a:first-child",function() {
                 event.preventDefault()
 
                 $("ul.tab a").removeClass("active")
@@ -155,6 +177,18 @@
                 $(".tab-content").append(
                     `<h1 id="tab${count+1}" style="display:none">${content}</h1>`
                 )
+            })
+
+            $("ul.tab").on("click","li > a:last-child",function() {
+                h = $(this).siblings().attr("href")
+                $(h).remove()
+                var active = $(this).siblings().attr("class")
+                $(this).parent().remove()
+
+                if(active != null && active.indexOf("active") >= 0) {
+                    $("ul.tab > li:first-child > a:first-child").click()
+                }
+                 
             })
         })
        </script>
